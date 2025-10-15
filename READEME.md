@@ -56,13 +56,13 @@ npm publish --access public
 
 ```shell
 #静态启动（使用开发者上传到NPM仓库中的tools-manifest.json）
-npx @deepq-tech/mcp-server-js@1.0.3
+npx @deepq-tech/mcp-server-js@latest
 
 #动态启动（启动时从OPEN API实时转化）
-npx @deepq-tech/mcp-server-js@1.0.3 start
+npx @deepq-tech/mcp-server-js@latest start
 
 #手动重新生成后再启动（客户本地从OPEN API重新生成tools-manifest.json）
-npx @deepq-tech/mcp-server-js@1.0.3 generate
-npx @deepq-tech/mcp-server-js@1.0.3
+npx @deepq-tech/mcp-server-js@latest generate
+npx @deepq-tech/mcp-server-js@latest
 
 ```

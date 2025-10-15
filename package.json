@@ -9,7 +9,7 @@
     ".mcp-serverrc.json",
     "tools-manifest.json"
   ],
-  "version": "1.0.3",
+  "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
