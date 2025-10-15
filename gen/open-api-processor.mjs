@@ -4,8 +4,6 @@ import SwaggerParser from '@apidevtools/swagger-parser';
 import micromatch from 'micromatch';
 import _ from 'lodash';
 
-export {z};
-
 function generateFallbackName(serviceName, method, path) {
     const cleanedServiceName = _.camelCase(serviceName);
     const cleanedPath = _.snakeCase(path);

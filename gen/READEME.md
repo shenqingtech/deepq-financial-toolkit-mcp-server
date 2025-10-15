@@ -30,8 +30,8 @@ npx @modelcontextprotocol/inspector
 这种方式会将工具定义持久化到文件中。
 
 ```shell
-npm run generate --prefix ~/IdeaProjects/mcp-server-js
-npm run serve --prefix ~/IdeaProjects/mcp-server-js
+node <absolute-path-to-parent-directory>/mcp-server-js/gen/cli-dev.mjs generate
+node <absolute-path-to-parent-directory>/mcp-server-js/cli.mjs
 ```
 
 ### **方式二：在内存中生成工具定义直接调试**
@@ -39,14 +39,14 @@ npm run serve --prefix ~/IdeaProjects/mcp-server-js
 这种方式更快，但工具定义不会被保存，适合快速验证。
 
 ```shell
-npm run start --prefix ~/IdeaProjects/mcp-server-js
+node <absolute-path-to-parent-directory>/mcp-server-js/gen/cli-dev.mjs start
 ```
 
 # 5.发布NPM
 
 ```shell
 #开发者在发布前手动需要执行此命令以生成新的tools-manifest.json
-npm run generate --prefix ~/IdeaProjects/mcp-server-js
+node <absolute-path-to-parent-directory>/mcp-server-js/gen/cli-dev.mjs generate
 
 npm version patch
 npm publish --access public
@@ -55,14 +55,5 @@ npm publish --access public
 # 6.客户使用
 
 ```shell
-#静态启动（使用开发者上传到NPM仓库中的tools-manifest.json）
 npx @deepq-tech/mcp-server-js@latest
-
-#动态启动（启动时从OPEN API实时转化）
-npx @deepq-tech/mcp-server-js@latest start
-
-#手动重新生成后再启动（客户本地从OPEN API重新生成tools-manifest.json）
-npx @deepq-tech/mcp-server-js@latest generate
-npx @deepq-tech/mcp-server-js@latest
-
 ```

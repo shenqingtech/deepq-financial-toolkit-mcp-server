@@ -42,7 +42,7 @@
         {
           "name": "天罡",
           "api_docs_url": "https://tiangang-sit.deepq.tech/api/v3/api-docs",
-          "base_url": "https://tiangang-sit.deepq.tech/api/",
+          "base_url": "https://tiangang-sit.deepq.tech/",
           "path_blacklist": [
             "/error"
           ],

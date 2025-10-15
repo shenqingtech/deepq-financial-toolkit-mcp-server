@@ -1,7 +1,7 @@
 import {McpServer} from '@modelcontextprotocol/sdk/server/mcp.js';
 import {StdioServerTransport} from '@modelcontextprotocol/sdk/server/stdio.js';
 import {callApi} from './api-client.mjs';
-import {z} from './open-api-processor.mjs';
+import {z} from 'zod';
 
 function hydrateSchema(schemaDef) {
     if (!schemaDef || !schemaDef._def) {

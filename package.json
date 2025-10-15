@@ -6,16 +6,13 @@
   "files": [
     "cli.mjs",
     "src/",
-    ".mcp-serverrc.json",
     "tools-manifest.json"
   ],
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node cli.mjs start",
-    "generate": "node cli.mjs generate",
-    "serve": "node cli.mjs serve",
+    "start": "node cli.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
