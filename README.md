@@ -68,7 +68,7 @@ A sample configuration for using the MCP Server with VS Code + Cline is as follo
 ```json
 {
   "mcpServers": {
-    "alibaba-cloud-ops-mcp-server": {
+    "deepq-finance-toolkit-mcp-server": {
       "command": "npx",
       "args": [
         "-y",
@@ -157,7 +157,7 @@ MCP工具已正式发布，40+个工具任您使用，如果您有其它想要�
 ```json
 {
   "mcpServers": {
-    "alibaba-cloud-ops-mcp-server": {
+    "deepq-finance-toolkit-mcp-server": {
       "command": "npx",
       "args": [
         "-y",
