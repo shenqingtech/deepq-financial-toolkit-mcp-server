@@ -1,5 +1,5 @@
 {
-  "name": "@deepq-tech/mcp-server-js",
+  "name": "@deepqtech/mcp-server-js",
   "bin": {
     "mcp-server-js": "./cli.mjs"
   },

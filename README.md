@@ -72,7 +72,7 @@ A sample configuration for using the MCP Server with VS Code + Cline is as follo
       "command": "npx",
       "args": [
         "-y",
-        "@deepq-tech/mcp-server-js@latest",
+        "@deepqtech/mcp-server-js@latest",
         "start"
       ],
       "env": {
@@ -161,7 +161,7 @@ MCP工具已正式发布，40+个工具任您使用，如果您有其它想要�
       "command": "npx",
       "args": [
         "-y",
-        "@deepq-tech/mcp-server-js@latest",
+        "@deepqtech/mcp-server-js@latest",
         "start"
       ],
       "env": {
