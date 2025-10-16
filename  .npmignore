@@ -1,3 +1,5 @@
+# .npmignore
 /node_modules/
 .idea/
 mcp-server-js.iml
+gen/

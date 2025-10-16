@@ -1,0 +1,57 @@
+{
+  "tool": {
+    "openapi": {
+      "config_list": [
+        {
+          "name": "云端工具-直连-生产环境",
+          "api_docs_url": "https://cloud-tools.deepq.tech/v2/api-docs",
+          "base_url": "https://cloud-tools.deepq.tech/",
+          "path_blacklist": [
+            "/error"
+          ],
+          "path_whitelist": [
+            "/mcp-tool/**"
+          ],
+          "enabled": false
+        },
+        {
+          "name": "云端工具-神禹auth-生产环境",
+          "api_docs_url": "https://cgi.deepq.tech:9196/cloud-tools-auth/v2/api-docs",
+          "base_url": "https://cgi.deepq.tech:9196/cloud-tools-auth/",
+          "path_blacklist": [
+            "/error"
+          ],
+          "path_whitelist": [
+            "/mcp-tool/**"
+          ],
+          "authorization_env_key": "DEEPQ_API_KEY",
+          "enabled": true
+        },
+        {
+          "name": "云端工具-本地环境",
+          "api_docs_url": "http://localhost:7891/v2/api-docs",
+          "base_url": "http://localhost:7891/",
+          "path_blacklist": [
+            "/error"
+          ],
+          "path_whitelist": [
+            "/mcp-tool/**"
+          ],
+          "enabled": false
+        },
+        {
+          "name": "天罡",
+          "api_docs_url": "https://tiangang-sit.deepq.tech/api/v3/api-docs",
+          "base_url": "https://tiangang-sit.deepq.tech/",
+          "path_blacklist": [
+            "/error"
+          ],
+          "path_whitelist": [
+            "/**"
+          ],
+          "enabled": false
+        }
+      ]
+    }
+  }
+}
