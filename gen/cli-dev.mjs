@@ -61,9 +61,9 @@ async function start() {
             break;
         default:
             console.error(`Error: Unknown command "${command}"\n`);
-            console.log('Usage: node gen/cli-dev.js [command]\n');
+            console.log('Usage: node gen/cli-dev.mjs [command]\n');
             console.log('Available commands:');
-            console.log('  start (default) - Regenerates tool definitions in-memory and starts the server.');
+            console.log('  start - Regenerates tool definitions in-memory and starts the server.');
             console.log('  generate        - Generates and saves the tool definition file (tools-manifest.json).');
             process.exit(1);
     }
