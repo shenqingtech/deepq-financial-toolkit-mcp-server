@@ -22,7 +22,57 @@
             "/error"
           ],
           "path_whitelist": [
-            "/mcp-tool/**"
+            "/mcp-tool/analyze/stock-biz-highlight",
+            "/mcp-tool/analyze/stock-tech-analysis",
+            "/mcp-tool/analyze/stock-cap-analysis",
+            "/mcp-tool/analyze/stock-fun-analysis",
+            "/mcp-tool/analyze/stock-rep-insight",
+            "/mcp-tool/analyze/stock-latest-price",
+            "/mcp-tool/guess-stock-code",
+            "/mcp-tool/analyze/stock-risk-warning",
+            "/mcp-tool/analyze/stock-flexibility",
+            "/mcp-tool/analyze/stock-valuation",
+
+            "/mcp-tool/query/market-viewpoint",
+            "/mcp-tool/analyze/a-share-fear-greed-index",
+            "/mcp-tool/analyze/a-share-temperature",
+            "/mcp-tool/analyze/a-share-market-quotes",
+
+            "/mcp-tool/analyze/sector-cap",
+            "/mcp-tool/analyze/sector-fun",
+            "/mcp-tool/analyze/sector-news",
+            "/mcp-tool/analyze/sector-report",
+            "/mcp-tool/analyze/sector-latest-price",
+            "/mcp-tool/analyze/sector-related-stocks",
+            "/mcp-tool/analyze/sector-price-change-rank",
+            "/mcp-tool/analyze/sector-price-change-reason",
+
+            "/mcp-tool/analyze/etf-basic-info",
+            "/mcp-tool/analyze/etf-fun-analysis",
+            "/mcp-tool/analyze/etf-performance",
+            "/mcp-tool/analyze/etf-under-assets",
+            "/mcp-tool/analyze/etf-latest-price",
+            "/mcp-tool/analyze/etf-tech-analysis",
+            "/mcp-tool/analyze/etf-related-news",
+
+            "/mcp-tool/analyze/fund-basic-info",
+            "/mcp-tool/analyze/fund-performance",
+            "/mcp-tool/analyze/fund-under-assets",
+            "/mcp-tool/analyze/fund-recent-views",
+            "/mcp-tool/guess/fund",
+
+            "/mcp-tool/analyze/a-share-market-events",
+
+            "/mcp-tool/analyze/official-secu-news",
+            "/mcp-tool/analyze/we-media-secu-news",
+            "/mcp-tool/analyze/finEntityExtract",
+            "/mcp-tool/query/current-datetime",
+            "/mcp-tool/query/recent-trans-date",
+
+            "/mcp-tool/analyze/macro-research",
+            "/mcp-tool/analyze/stk-research",
+            "/mcp-tool/analyze/industry-research",
+            "/mcp-tool/analyze/report/rating-static"
           ],
           "authorization_env_key": "DEEPQ_API_KEY",
           "enabled": true
