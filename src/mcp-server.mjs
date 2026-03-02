@@ -116,7 +116,7 @@ export const startMcpServer = async (toolDefinitions) => {
     try {
         const transport = new StdioServerTransport();
         await server.connect(transport);
-        console.log('MCP Server (stdio) started successfully, ready for requests.');
+        console.error('MCP Server (stdio) started successfully, ready for requests.');
     } catch (error) {
         console.error('MCP Server failed to start:', error);
         process.exit(1);
