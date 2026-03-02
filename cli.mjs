@@ -12,14 +12,14 @@ const TOOLS_DEFINITION_FILE_NAME = 'tools-manifest.json';
 const TOOLS_DEFINITION_FILE_PATH = path.join(__dirname, TOOLS_DEFINITION_FILE_NAME);
 
 async function serve() {
-    console.log(`Starting MCP server from '${TOOLS_DEFINITION_FILE_NAME}'...`);
+    console.error(`Starting MCP server from '${TOOLS_DEFINITION_FILE_NAME}'...`);
     try {
         const toolsJson = await fs.readFile(TOOLS_DEFINITION_FILE_PATH, 'utf-8');
         const tools = JSON.parse(toolsJson);
         if (tools.length === 0) {
-            console.warn('Warning: No tools found in the definition file. Server will start with no tools.');
+            console.error('Warning: No tools found in the definition file. Server will start with no tools.');
         } else {
-            console.log(`Loaded ${tools.length} tool(s) from ${TOOLS_DEFINITION_FILE_NAME}.`);
+            console.error(`Loaded ${tools.length} tool(s) from ${TOOLS_DEFINITION_FILE_NAME}.`);
         }
         await startMcpServer(tools);
     } catch (error) {
